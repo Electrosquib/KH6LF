@@ -1,0 +1,70 @@
+.book-cover {
+    width: 20rem;
+}
+  
+.book {
+    display: flex;
+    flex-direction: row;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #bbb9b9;
+    background-color: rgb(33, 37, 54);
+    width: 90%;
+}
+
+h1 {
+    margin-top: 4rem;
+}
+
+.book-icons {
+    margin-top: 2rem;
+    display: flex;
+    text-align: center;
+}
+
+.icon {
+    margin: 0 1rem;
+}
+
+.icon:hover {
+    transition: 0.1s ease-out;
+    -webkit-transition: 0.1s ease-out;
+    transform: translate(0, .3rem);
+    -webkit-transform:translate(0, .3rem);
+    cursor: pointer;
+}
+
+#sdr-preview {
+    margin-left: 4rem;
+}
+
+@media (max-width: 700px) {
+    .book {
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #1a1a29;
+        margin-bottom: 12rem;
+    }
+
+    .book-icons {
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+    .book-title {
+        padding: 0 2rem;
+        margin-top: -3rem;
+    }
+
+    #sdr-preview {
+        margin: 0;
+        margin-top: -12rem;
+        width: 100%;
+    }
+}
