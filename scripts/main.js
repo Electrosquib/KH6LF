@@ -1,5 +1,7 @@
 var l = document.getElementById("l");
 var f = document.getElementById("f");
+var lm = document.getElementById("lm");
+var fm = document.getElementById("fm");
 
 var logo = document.getElementById("logosvg")
 var desktop_navbar = document.getElementById("desktop-nav");
@@ -29,8 +31,14 @@ var fpoints = `
     ${4*width-(width/height)*width},${width}
     ${3*width-(width/height)*width+bottomwidth},${width}
     `;
-l.setAttribute("points", lpoints);
-f.setAttribute("points", fpoints);
+if (window.screen.width <= 900) {
+    lm.setAttribute("points", lpoints);
+    fm.setAttribute("points", fpoints);
+}
+else {
+    l.setAttribute("points", lpoints);
+    f.setAttribute("points", fpoints);
+}
 
 
 // logo.addEventListener("mouseleave", (evt) => {

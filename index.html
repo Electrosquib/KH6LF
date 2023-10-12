@@ -14,6 +14,9 @@
     <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="styles/desktop.css">
     <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/blog.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -33,16 +36,28 @@
                 <div class='menu-button'></div>
             </label>
                 <ul class="menu">
-                <li class="nav-button"><a href="./blog.html">Blog</a></li>
+                <!-- <li class="nav-button"><a href="./blog.html">Blog</a></li> -->
                 <li class="nav-button"><a href="./books.html">Books</a></li>
                 <li class="nav-button"><a href="./shop.html">Shop</a></li>
                 <li class="nav-button"><a href="./services.html">Services</a></li>
                 <li class="nav-button"><a href="./about.html">About</a></li>
                 </ul>
             </section>
+            <div id="logokh6lf">
+            <svg id="logosvg" class="logomargin" width="70px" height="70px" viewBox="0 0 100 100">
+                <!-- L -->
+                <svg id="gl">
+                    <polygon id="lm">
+                    </polygon>
+                    <polygon id="fm">
+                    </polygon>
+                </svg>
+              </svg>
+              <a href="" class="kh6lf-margin" id="kh6lf">KH6LF <br><h4 class="subheading">Electronics and Radio<h4></a>
+              </div>
 
     </div>
-    <svg id="blob" viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+    <svg id="blob" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
         <defs>
             <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%" >
                    <stop offset="0%" style="stop-color:rgb(17,108,133);stop-opacity:1.00" />
@@ -51,6 +66,7 @@
            </defs>    
         <path fill="url(#lgrad)" d="M431.5,292.5Q384,345,338,373Q292,401,240,400Q188,399,134,377.5Q80,356,60,298Q40,240,76,193.5Q112,147,149.5,111.5Q187,76,246.5,55.5Q306,35,353,79.5Q400,124,439.5,182Q479,240,431.5,292.5Z" />
         </svg>
+        <div id="black">
     <div class="nav" id="nav-title">
         <svg id="logosvg" class="logomargin" width="200px" height="200px" viewBox="0 0 100 100">
             <!-- L -->
@@ -64,7 +80,7 @@
           <a href="" class="kh6lf-margin" id="kh6lf">KH6LF <br><h4 class="subheading">Electronics and Radio<h4></a>
             <div id="desktop-nav" style="margin-top: -3rem; margin-left: 10rem; font-size: 20px;">
                     <div class="nav-main">
-                        <a href="./blog.html"><div class="nav-button">Blog</div></a>
+                        <!-- <a href="./blog.html"><div class="nav-button">Blog</div></a> -->
                         <a href="./books.html"><div class="nav-button">Books</div></a>
                         <a href="./shop.html"><div class="nav-button">Shop</div></a>
                         <a href="./services.html"><div class="nav-button">Services</div></a>
@@ -72,8 +88,34 @@
                     </div>
             </div>
 
-    </div>
-    <section id="main">
+    </div></div>
+    <section id="blog">
+        <div id="cats">
+        <div id="mobile-cat-show"><h1>Categories <span id="cat_arrow">▶</span></h1></div>
+        <ul id="mobile-categories">
+            <!-- <li class="dropdown_item-1">Item 1</li>
+            <li class="dropdown_item-2">Item 2</li>
+            <li class="dropdown_item-3">Item 3</li>
+              <li class="dropdown_item-4">Item 4</li>
+              <li class="dropdown_item-5">Item 5</li> -->
+          </ul>
+        </div>
+        <h1 class="big">Recent Posts</h1><hr>
+        <div id="blog-categories">
+            <div id="blog-content">
+
+            </div>
+            <div id="categories">
+                <br>
+                <h1>Categories</h1>
+                <ul class="cat_list">
+                    <li>Radio</li>
+                    <li>Electronics</li>
+                    <li>Computers</li>
+                    <li>Programming</li>
+                </ul>
+            </div>
+        </div>
         
     </section>
     <section id="footer">
@@ -91,7 +133,9 @@
         
     </section>
     <!-- Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="scripts/main.js"></script>
-    <script src="scripts/transition.js"></script>
+    <script src="scripts/blog.js"></script>
+
 
 </body>

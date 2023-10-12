@@ -1,13 +1,26 @@
-/* Navbar */
-
+/* :root {
+  --main-background: #050127;
+  --border: 
+} */
 #mobile-nav {
     display: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
     #mobile-nav {
         display: block;
     }
+    #blob {
+      display: none;
+    }
+    .nav {
+      display: none;
+      /* margin: 0;
+      width: 50%;
+      margin-top: -2rem;
+      margin-left: 1rem;
+      position:relative; */
+  }
 
     @keyframes slide-left {
         from {
@@ -36,8 +49,14 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
+        border: 2px solid var(--border);
       }
       
+      li a {
+        width: 100%;
+        margin-top: .5rem;
+      }
+
       .menu > li {
         margin: 0 1rem;
         overflow: hidden;
@@ -96,7 +115,7 @@
         transform: rotate(-405deg);
       }
       
-      @media (max-width: 700px) {
+      @media (max-width: 900px) {
         .menu-button-container {
           display: flex;
         }
@@ -115,11 +134,11 @@
           height: 0;
           margin: 0;
           padding: 0;
-          border: 0;
           transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
         }
         #menu-toggle:checked ~ .menu li {
-          height: 2.5em;
+          height: 2em;
+          border-bottom: 2px solid var(--border);
           padding: 0.5em;
           transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   
@@ -133,8 +152,7 @@
           width: 100%;
           color: white;
           z-index: 2;
-          background-color:dimgrey;
-  
+          background-color:var(--main-background);
         }
       }
     
@@ -189,6 +207,7 @@
   #nav-title {
     text-align: center;
     width: 100%;
+    position: fixed;
   }
 
   .kh6lf-margin {
@@ -212,12 +231,20 @@
   .contact {
     margin: 15px;
   }
-  .nav {
-    display: block;
-    margin: 0;
-    width: 50%;
-    margin-top: -2rem;
-    margin-left: 1rem;
+  
+
+#logokh6lf {
+  display: block;
+}
+#logokh6lf #logosvg {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+}
+#logokh6lf #kh6lf {
+  position: absolute;
+  top: 2.5rem;
+  left: 7rem;
 }
 
 #navindex {

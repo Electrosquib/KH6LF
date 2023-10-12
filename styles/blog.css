@@ -3,15 +3,74 @@
     --background-color: rgb(33, 37, 54);
 }
 
-#blog-content {
-    width: 80%;
-    margin-top: 2rem;
+#blog {
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
     font-family: sans-serif;
     font-weight: 700;
     color: var(--text-color);
+    margin-top: 2rem;
   }
+
+@media only screen and (min-width: 900px) and (orientation: landscape) {
+    #blog {
+        margin-top: 50vh;
+    }
+}
+/* Tablet Styles */
+@media only screen and (min-width: 900px) and (orientation: portrait) {
+    #blog {
+        margin-top: 25vh;
+    }
+}
+/* @media only screen and (min-width: 500px) and (orientation: portrait) {
+    #blog {
+        margin-top: 30vh;
+    }
+} */
+
+#blog-categories {
+    display: flex;
+    gap: 13px;
+}
+
+#categories {
+    background-color: #121930;
+    border: 1px solid rgb(70, 70, 71);
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 3px 5px 4px rgb(2, 73, 97);
+
+}
+
+.cat_list {
+    margin-top: 1rem;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.big {
+    font-size: 40px;
+    font-style: italic;
+    text-shadow: 5px 7px 4px rgb(2, 73, 97);
+}
+
+#blog-content {
+    width: 70%;
+    margin-left: 0rem;
+    margin-right: auto;
+    text-align: left;
+    padding: 2rem;
+    border: 1px solid rgb(70, 70, 71);
+    border-radius: 10px;
+    width: auto;
+    box-shadow: 3px 5px 4px rgb(2, 73, 97);
+    background-color: #121930;
+
+
+}
 
 #blog-content h1 {
     margin-left: -1rem;
@@ -84,16 +143,18 @@ pre {
     border-style: solid;
     border-color: #bbb9b9;
     width: 70%;
-    background-color: var(--background-color);
     color: var(--text-color);
     overflow: auto;
     overflow-wrap:break-wrap;
     margin-bottom: 2rem;
     margin-top: .3rem;
+    box-shadow: 5px 7px 4px rgb(2, 73, 97);
+    background-color: var(--background-color);
 }
 
 code {
     width: 70%;
+
 }
 
 table, th, td {
@@ -103,6 +164,7 @@ table, th, td {
 
 table {
     margin-bottom: 2rem;
+    box-shadow: 5px 7px 4px rgb(2, 73, 97);
 }
 
 th, td {
@@ -115,4 +177,74 @@ th {
 
 tr:nth-child(odd) {
     background-color: var(--background-color);
+}
+#mobile-cat-show {
+    display: none;
+}
+@media only screen and (max-width: 500px) {
+    #mobile-cat-show {
+        display: inline-block;
+    }
+    #cat_arrow {
+        font-size: 15px;
+        margin-left: 5px;
+        position: relative;
+        bottom: 2px;
+    }
+    #categories {
+        display: none;
+    }
+    #blog-categories {
+        flex-direction: column;
+        width: 100%;
+    }
+    #blog-content {
+        margin: 10px;
+        width: auto;
+        padding: 1rem;
+    }
+    #blog {
+        width: 100%;
+    }
+    pre {
+        width: auto;
+        margin-left: 0;
+    }
+    #blog-content h1, #blog-content h2 {
+        margin-left: 0;
+    }
+
+    #mobile-categories {
+        display: none;
+        margin-top: 1rem;
+    }
+    #mobile-categories li {
+        margin: 5px;
+    }
+
+    #cats {
+        border: 1px solid rgb(70, 70, 71);
+        border-radius: 5px;
+        width: auto;
+        box-shadow: 1px 2px 2px rgb(2, 73, 97);
+        background-color: #121930;
+        margin-bottom: 1rem;
+        margin-top: -1rem;
+        padding: 10px;
+    }
+
+    @keyframes rotateX {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    50% {
+        transform: rotateX(-20deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+    }
+ 
 }
